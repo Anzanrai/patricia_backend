@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import django_heroku
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 from rest_framework.reverse import reverse_lazy
 
@@ -188,4 +187,3 @@ ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 AUTH_USER_MODEL = "botusers.BotUser"
 # ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = reverse_lazy('account_confirm_complete')
 # ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = reverse_lazy('account_confirm_complete')
-django_heroku.settings(locals())
